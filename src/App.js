@@ -3,7 +3,6 @@ import RootLayout from "./layouts/RootLayout"
 import Home from "./pages/Home"
 
 import LocationsLayout from "./layouts/LocationsLayout"
-// import Locations, { dataLoader } from "./pages/locations/Locations"
 import Locations from "./pages/locations/Locations"
 
 import HelpLayout from "./layouts/HelpLayout"
@@ -19,7 +18,6 @@ const router = createBrowserRouter(
       <Route index element={<Home />} />
 
       <Route path="locations" element={<LocationsLayout />}>
-        {/* <Route index element={<Locations />} loader={dataLoader} /> */}
         <Route index element={<Locations />} />
       </Route>
 
