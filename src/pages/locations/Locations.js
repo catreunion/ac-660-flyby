@@ -24,7 +24,8 @@ const Locations = () => {
   return (
     <>
       {data.locations.map((item) => (
-        <Link to="/" key={item.id}>
+        // <Link to="/" key={item.id}>
+        <Link to={`/locations/${item.id}`} key={item.id}>
           <h3>{item.name}</h3>
           <img width="400" height="250" alt="location-reference" src={`${item.photo}`} />
           <p>{item.description}</p>

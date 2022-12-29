@@ -4,6 +4,7 @@ import Home from "./pages/Home"
 
 import LocationsLayout from "./layouts/LocationsLayout"
 import Locations from "./pages/locations/Locations"
+import LocationDetails from "./pages/locations/LocationDetails"
 
 import HelpLayout from "./layouts/HelpLayout"
 import Faq from "./pages/help/Faq"
@@ -19,6 +20,7 @@ const router = createBrowserRouter(
 
       <Route path="locations" element={<LocationsLayout />}>
         <Route index element={<Locations />} />
+        <Route path=":id" element={<LocationDetails />} />
       </Route>
 
       <Route path="help" element={<HelpLayout />}>

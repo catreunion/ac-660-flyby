@@ -1,5 +1,8 @@
 ```bash
 # install tailwindcss
+yarn add @apollo/client graphql
+
+# install tailwindcss
 yarn add -D tailwindcss
 
 # generate tailwind.config.js file

@@ -14,12 +14,12 @@ const NotFound = () => {
               <p className="mt-1 text-base text-gray-500">Please check the URL in the address bar and try again.</p>
             </div>
             <div className="mt-10 flex space-x-3 sm:border-l sm:border-transparent sm:pl-6">
-              <a href="#" className="inline-flex items-center rounded-md border border-transparent bg-indigo-600 px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">
+              {/* <a href="#" className="inline-flex items-center rounded-md border border-transparent bg-indigo-600 px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">
                 Go back home
               </a>
               <a href="#" className="inline-flex items-center rounded-md border border-transparent bg-indigo-100 px-4 py-2 text-sm font-medium text-indigo-700 hover:bg-indigo-200 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">
                 Contact support
-              </a>
+              </a> */}
             </div>
           </div>
         </main>
