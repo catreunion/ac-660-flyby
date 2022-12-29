@@ -14,6 +14,9 @@ const RootLayout = () => {
           <NavLink to="about" className={({ isActive }) => (isActive ? activeStyle : undefined)}>
             About
           </NavLink>
+          <NavLink to="help" className={({ isActive }) => (isActive ? activeStyle : undefined)}>
+            Help
+          </NavLink>
         </nav>
       </header>
 
