@@ -1,15 +1,17 @@
 import { NavLink, Outlet } from "react-router-dom"
 
 const HelpLayout = () => {
-  const activeStyle = "text-3xl font-bold underline"
+  const inactiveStyle = "text-black "
+  const activeStyle = "bg-indigo-600 text-white"
 
   return (
     <>
       <nav>
-        <NavLink to="faq" className={({ isActive }) => (isActive ? activeStyle : undefined)}>
+        <h2>Help</h2>
+        <NavLink to="faq" className={({ isActive }) => (isActive ? activeStyle : inactiveStyle)}>
           FAQ
         </NavLink>
-        <NavLink to="contact" className={({ isActive }) => (isActive ? activeStyle : undefined)}>
+        <NavLink to="contact" className={({ isActive }) => (isActive ? activeStyle : inactiveStyle)}>
           Contact
         </NavLink>
       </nav>
