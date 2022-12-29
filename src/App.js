@@ -1,34 +1,19 @@
-import { BrowserRouter, Routes, Route, NavLink } from "react-router-dom"
+import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider } from "react-router-dom"
+import RootLayout from "./layouts/RootLayout"
 import Home from "./pages/Home"
 import About from "./pages/About"
 
-const App = () => {
-  const activeStyle = "text-3xl font-bold underline"
-
-  return (
-    <BrowserRouter>
-      <header>
-        <nav>
-          <h1>catreunion</h1>
-          {/* <Link to="/">Home</Link> */}
-          <NavLink to="/" className={({ isActive }) => (isActive ? activeStyle : undefined)}>
-            Home
-          </NavLink>
-          <NavLink to="about" className={({ isActive }) => (isActive ? activeStyle : undefined)}>
-            About
-          </NavLink>
-        </nav>
-      </header>
-
-      <main>
-        <Routes>
-          {/* <Route path="/" element={<Home />} /> */}
-          <Route index element={<Home />} />
-          <Route path="about" element={<About />} />
-        </Routes>
-      </main>
-    </BrowserRouter>
+const router = createBrowserRouter(
+  createRoutesFromElements(
+    <Route path="/" element={<RootLayout />}>
+      <Route index element={<Home />} />
+      <Route path="about" element={<About />} />
+    </Route>
   )
+)
+
+const App = () => {
+  return <RouterProvider router={router} />
 }
 
 export default App
