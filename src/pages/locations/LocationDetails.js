@@ -15,8 +15,9 @@ const LocationDetails = () => {
   `
   const { loading, error, data } = useQuery(QUERY, { variables: { id } })
 
-  if (loading) return <p>Loading...</p>
-  if (error) return <p>Error : {error.message}</p>
+  // if (loading) return <p>Loading...</p>
+  if (loading) return null
+  if (error) return `Error! ${error}`
 
   return (
     <>
